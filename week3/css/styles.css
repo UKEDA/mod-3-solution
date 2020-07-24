@@ -9,9 +9,6 @@ body {
   background-color: #85CDB0;
   font-family: 'Oxygen', sans-serif;
 }
-
-/** HEADER**/
-
 #header-nav {
 	background-color: #E8A87C;
 	border-radius: 0;
@@ -21,9 +18,10 @@ body {
 
 .navbar-brand {
 	padding-top: 25px;
+  
 }
 
-.navbar-brand h1 { /*Restaurant name/*/
+.navbar-brand h1 { /*Company Name*/
    font-family: 'Lora', serif;
    color: #41B3A3;
    font-size: 1.8em;
@@ -35,25 +33,89 @@ body {
    line-height: .75em;
 
 }
-.navbar-header button {
-  background-color: 1px solid #41B3A3;
-  border-color: #E8A87C;
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #fff;
 }
+
+#nav-list a:hover {
+  background: #41B3A3;
+  text-transform: uppercase;
+  color: yellow;
+  font-size: 20px;
+}
+
+#nav-list a {
+  color: #fff;
+}
+#nav-list span {
+  margin-right: 8px; 
+  /* End Header */
+}
+
+/* HOMEPAGE */
 #Our-menu {
   text-transform: uppercase;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  font-weight: bolder;
+  text-shadow: 0 0 10px #3F0C1F;
 }
 
 #our-menu-block {
   text-transform: uppercase;
-  margin-bottom: 30px;
+  width: 300px;
+  margin-bottom: 60px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #41B3A3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-shadow: 0px 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+
 }
 
-.Chicken, .Beef, .Sushi p {
+/*#our-menu-block */#Chicken p, #Beef p, #Sushi p {
   font-family: 'Lora', serif;
-  font-size: .5em;
+  font-size: .6em;
   border-color: white;
+  margin: 5px 10px 10px 10px;
+  padding: 100px 40px 30px 40px;
+  
 }
+
+#Chicken, #Beef, #Sushi {
+background-color: #E8A87C;
+position: relative;
+margin-top: 30px;
+margin-bottom: 60px;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+/* END HOMEPAGE */
+
+/* Desktop */
+@media (min-width: 1200px) {
+#section-menu {
+  margin: 0px -40px 0 -40px;
+}
+}
+
+/* Tablet */
+ @media (min-width: 768px) and (max-width: 1999px) {
+#section-menu {
+  margin: 0px -40px 0 -40px;
+}
+ }
+
+ @media (max-width: 767px) {
+
+ }
+
 
